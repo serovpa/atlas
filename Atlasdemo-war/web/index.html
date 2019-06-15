@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Atlas_demo</title>
+        <meta charset=windows-1251>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #login {
+                width: 200px; /* Ширина поля в пикселах */
+            }
+            #psw {
+                width: 200px; /* Ширина поля в пикселах */
+            } 
+            #submit {
+                width: 105px; /* Ширина поля в пикселах */
+            } 
+            #guest {
+                width: 105px; /* Ширина поля в пикселах */
+            } 
+        </style>
+    </head>
+    <body>
+        <header>
+            <Center> <h1>  Атлас от serovpa  </h1> </Center>
+            <hr>
+        </header>
+    <Center> <img src=./images/map.png> </Center>
+    <Center>
+        <form action="Mainpage" method="Get">
+            Введите логин и пароль: <br/>
+            <input type="text" name="login" required id="login"
+                   size="120" autocomplete="off" placeholder="Логин"
+                   title="Только русские и английский буквы и цифры" /> <br/>
+            <input type="password" name="psw" id="psw" size="120" 
+                   autocomplete="off" placeholder="Пароль"/>  <br/>
+            <input type="submit" name="log" id="submit" value="Войти"/>
+        </form>
+        <form action="Mainpage" method="Get">
+            <input type="submit" name="guest" id="guest" value="Гостевой вход"/>
+        </form>
+        <a href="Registration">Создать учетную запись</a>
+    </center> 
+    <footer>
+        <hr>
+        <center> 2019 </center>
+        <hr>  
+    </footer>
+</body>
+
+</html>
